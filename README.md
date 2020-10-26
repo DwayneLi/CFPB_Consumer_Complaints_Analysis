@@ -1,7 +1,7 @@
 # CFPB_Consumer_Complaints_Analysis
 ###  ---- RPI 2020 Datathon Competition
 
-The final report is shown in file list or you can [click](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/raw/master/CFPB_Complaints_Final_Report%20Team7.pdf) for final report.
+The final report included data analysis and the legislation proposal is shown in the file list or you can [**click**](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/raw/master/CFPB_Complaints_Final_Report%20Team7.pdf) for final report.
 
 1. Data discription:
 
@@ -21,10 +21,10 @@ Features                 |         |  |
 
 
 3. Data clean
-CFPB updated its product and issue list on 2017 and the raw data contains classification of products and issues before 2017 and after 2017. So we merge the complaints that actually belong to the same category. We also extract the year and month of complaints for next step analysis.
+CFPB updated its product and issue list on 2017 and the raw data contains the classification of products and issues before 2017 and after 2017. So we merge the complaints that actually belong to the same category. We also extract the year and month of complaints for the next step analysis.
 
 4. Data Visualization
-We combined several dimensions when we explore the data. Following is a screen shot of our visualizaion which from the final report
+We combined several dimensions when we explore the data. Following is a screenshot of our visualizfation which from the final report
 ![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/Viz%20in%20report.png?raw=true)
 
 5. We focused on credit reporting and debt collection and made legislation proposals based on analysis on them.
@@ -33,3 +33,9 @@ We combined several dimensions when we explore the data. Following is a screen s
 
 ![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/topic_words.png?raw=true)
 ![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/Topic_viz.png?raw=true)
+
+Following is the top 4 topics finded by Top2Vec without assign topic number manually and word cloud created by these topics.
+
+<img src="https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/topic01.png" width="650" height="400" />
+
+<img src="https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/topic23.png" width="650" height="400" />
