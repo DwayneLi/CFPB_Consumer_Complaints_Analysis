@@ -3,4 +3,33 @@
 
 The final report is shown in file list or you can [click](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/raw/master/CFPB_Complaints_Final_Report%20Team7.pdf) for final report.
 
-Used ggplot2 in R.
+1. Data discription:
+
+    1548394 records x 18 features
+
+2. features:
+
+
+Features                 |         |  |
+|:----------------------:|:----------------------:|:--------------------------:|
+| Product                |  Company               | State                      |
+| Sub-product            |    Company public response   |   Zipcode            |
+| Issue                  | Date received          |Tags                        |
+| Sub Issue              |  Complaint ID          | Consumer consent provided? |
+| Consumer complaint narrative|  Submitted via    | Date sent to company       |
+| Company response to consumer|  Timely responese?| Consumer disputed?         |
+
+
+3. Data clean
+CFPB updated its product and issue list on 2017 and the raw data contains classification of products and issues before 2017 and after 2017. So we merge the complaints that actually belong to the same category. We also extract the year and month of complaints for next step analysis.
+
+4. Data Visualization
+We combined several dimensions when we explore the data. Following is a screen shot of our visualizaion which from the final report
+![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/Viz%20in%20report.png?raw=true)
+
+5. We focused on credit reporting and debt collection and made legislation proposals based on analysis on them.
+
+6. As for the narrative complaints we applied LDA model to find what people complaint most. Besides, we use the Top2Vec package extract topic under without assign the model number at first. You can download and open the visualization of topics in [here](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/ldavis_prepared_5.html)
+
+![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/topic_words.png?raw=true)
+![Viz of Data](https://github.com/DwayneLi/CFPB_Consumer_Complaints_Analysis/blob/master/Topic_viz.png?raw=true)
